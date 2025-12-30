@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Official Celebrity Website</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #c7a14a;
+      --light: #f8fafc;
+      --dark: #020617;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION BAR */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--secondary);
+      left: 0;
+      bottom: -6px;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('./img.jpeg') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: auto;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 90px 24px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 38px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    section p {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    /* VIP SECTION */
+    .vip-box {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+      border-radius: 14px;
+      padding: 70px 40px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+
+    .vip-box h2 {
+      margin-bottom: 15px;
+    }
+
+    .vip-box button {
+      margin-top: 25px;
+      padding: 14px 46px;
+      background: var(--secondary);
+      border: none;
+      border-radius: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .vip-box button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(199,161,74,0.4);
+    }
+
+    /* CONTACT SECTION */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      margin-top: 50px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+    }
+
+    form button {
+      padding: 14px;
+      width: 100%;
+      background: var(--primary);
+      color: white;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .contact-links a {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-links a:hover {
+      color: var(--secondary);
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 24px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">World-wide Fan.site</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#vip">VIP Card</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Official Website</h1>
+    <p>Exclusive access, official updates, and premium VIP experiences.</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    This official platform provides verified information, career highlights,
+    achievements, and personal insights curated directly from the celebrity team.
+  </p>
+</section>
+
+<section id="vip">
+  <div class="vip-box">
+    <h2>VIP Card Access</h2>
+    <p>
+      Unlock exclusive benefits including priority communication, private
+      invitations, and premium digital content.
+    </p>
+    <button onclick="window.location='./vipcard.html'">Purchase VIP Card</button>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-grid">
+    <form id="my-form" action="https://formspree.io/f/mwvkzoow" method="POST">
+      <input type="text" name="Full name" placeholder="Full Name" required />
+      <input type="email" name="Email" placeholder="Email Address" required />
+      <textarea rows="5" name="Message" placeholder="Your Message"></textarea>
+      <button id="my-form-button">Submit</button>
+    </form>
+
+    <div class="contact-links">
+      <a href="mailto:worldwidefanfamily@gmail.com">📧 Management Mail</a>
+      <a href="https://wa.me/31623975676?text=Hello%20I%20want%20VIP%20access" target="_blank">📱 WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Celebrity Name. All rights reserved.
+</footer>
+
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        alert('Thanks for your submission!');
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            alert(data["errors"].map(error => error["message"]).join(", "))
+          } else {
+            alert("Oops! There was a problem submitting your form")
+          }
+        })
+      }
+    }).catch(error => {
+      alert('Oops Something went wrong!')
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIP Fan Card Purchase</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #c7a14a;
+      --light: #f8fafc;
+      --dark: #020617;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(2, 6, 23, 0.95);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      letter-spacing: 2px;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .vip-card {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      border: 1px solid rgba(199,161,74,0.3);
+      border-radius: 18px;
+      padding: 60px 40px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+    }
+
+    .vip-card h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: var(--secondary);
+    }
+
+    .vip-card p {
+      font-size: 17px;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      opacity: 0.9;
+    }
+
+    .steps {
+      text-align: left;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .steps li {
+      margin-bottom: 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .notice {
+      background: rgba(199,161,74,0.1);
+      border-left: 4px solid var(--secondary);
+      padding: 18px;
+      margin: 40px auto;
+      max-width: 650px;
+      font-size: 15px;
+    }
+
+    .contact-box {
+      margin-top: 40px;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin: 10px;
+      padding: 14px 32px;
+      border-radius: 40px;
+      background: var(--secondary);
+      color: #020617;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-box a:hover {
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .vip-card h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Official VIP Fan Card</h1>
+</header>
+
+<div class="container">
+  <div class="vip-card">
+    <h2>VIP Fan Card Purchase</h2>
+    <p>
+      The VIP Fan Card grants verified fans exclusive recognition, priority
+      communication, and premium access approved by the management team.
+    </p>
+
+    <h3 style="color: var(--secondary); margin-bottom: 10px;">Mode of Payment</h3>
+    <p><strong>Bank Transfer Only</strong></p>
+
+    <ul class="steps">
+      <li>1. Contact the official management team to request bank account details.</li>
+      <li>2. Complete the bank transfer using the provided account information.</li>
+      <li>3. After payment, contact the team with your proof of payment.</li>
+      <li>4. A unique VIP Fan Card code will be issued and verified.</li>
+    </ul>
+
+    <div class="notice">
+      ⚠️ <strong>Important:</strong> Do not make any payment without first
+      contacting the official team. VIP codes are only issued after payment
+      confirmation.
+    </div>
+
+    <div class="contact-box">
+      <a href="mailto:worldwidefanfamily@gmail.com">Email Support</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2025 Official Celebrity Fan Program. All rights reserved.
+</footer>
+
+</body>
+</html>
